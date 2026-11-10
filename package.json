@@ -1,0 +1,51 @@
+{
+  "name": "dsh-council",
+  "version": "0.1.0",
+  "description": "循环决议 · Council — 三智能体（Leader / 执行者 / 检验者）独立上下文的循环执行插件：Leader 与用户对话并分配任务，执行者动手，检验者按可被 Leader 修订的标准判定，直到达标后 Leader 终检并回复用户。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "test",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/unit.mjs && node test/smoke.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "agent-team",
+    "leader-executor-verifier",
+    "council",
+    "loop"
+  ],
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "os": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

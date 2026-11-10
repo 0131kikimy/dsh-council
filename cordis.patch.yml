@@ -1,0 +1,14 @@
+# 循环决议 · Council 挂载行
+#
+# 一行 insert：把本包入口按【包名】插进组合树。
+# name 必须等于 package.json 的包名，Node 才能解析到已安装的代码。
+#
+# 配置默认留空 = 使用 lib/config.js 的默认值；也可以在这里覆盖，例如：
+#   config:
+#     maxRounds: 2
+#     executorName: executor
+#     verifierName: verifier
+- insert:
+    - id: dsh-council
+      name: dsh-council
+      config: {}

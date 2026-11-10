@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Council loop",
+    "description": "Three-agent loop: the Lead talks to you and assigns work, the executor builds it, the verifier judges it against criteria the Lead can revise, until it passes and the Lead delivers."
+  }
+}
